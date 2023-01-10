@@ -1,22 +1,24 @@
 import Navbar from './components/Navbar.js'
 import About from './components/About.js'
 import Projects from './components/Projects.js'
-import Connect from './components/Connect.js';
-//import Sidebar from './components/Sidebar.js'
+import Connect from './components/Connect.js'
 import './App.css';
 
 const App = () => {
 
   return (
-    <div className=''>
-      <Navbar/>
-      {/* <Sidebar /> */}
-      <main className='px-40 w-full min-h-screen'>
-        <About />
-        <Projects />
-        <Connect />
+    <div>
+      <Navbar />
+      <main className='bg-[#0B192E] px-5 md:px-20 lg:px-40'>
+        <section className='min-h-screen'>
+          <h2 className="text-6xl py-2 text-[#58DFC3] font-medium md:text-6xl lg:text-9xl">Hello! - My name is</h2>
+          <h2 className="text-6xl pt-2 py-5 text-[#58DFC3] font-medium md:text-6xl lg:text-9xl">TUSHAR</h2>
+          <About />
+          <Projects />
+          <Connect />
+        </section>
+        <footer className='flex justify-center items-center py-4 text-white font-code'>Designed & Built by Tushar!</footer>
       </main>
-      <footer className='flex justify-center items-center p-4'>Designed & Built by Tushar!</footer>
     </div>
   );
 }

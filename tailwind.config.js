@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      'code':["SF Mono","Fira Code","Fira Mono","Roboto Mono","monospace"],
+    },
   },
   plugins: [],
 }

@@ -1,27 +1,25 @@
+import projects_data from "../data"
 const Projects = () => {
     return(
-        <div className="mx-auto my-0 py-24 px-0">
-        <h2 className="flex mt-2 mb-10 mx-0 items-center whitespace-nowrap relative">Here Are Some Things I've Built:</h2>
-        <ul>
-            <li><ProjectItem/></li>
-            <li>EPFO api</li>
-            <li>Kingdomino - Group Academic</li>
-            <li>Collection of AI projects (Academic)</li>
-            <li>Collection of Visual Application projects (Academic)</li>
+        <>
+        <h3 className="text-3xl text-[#CCD6F6] py-2">Here Are Some Things I've Built:</h3>
+        <ul className="lg:flex flex-wrap gap-10">
+            {projects_data.map(project => <ProjectItem kind={project.kind} name={project.name} desc={project.description} stack={project.stack} link={project.links} />)}
         </ul>
-        </div>
+        </>
     )
 }
-const ProjectItem = () => {
+const ProjectItem = (props) => {
     return(
-        <div className="grid relative gap-2 items-center grid-cols-12">
-            <div className="col-start-7 relative text-right">
-                <p>Star Project</p>
-                <h3>MUN-BOT</h3>
-                <div className="relative z-1 p-6 bg-slate-400"><p>Info</p></div>
-                <p>Tech Stack</p>
-                <p>Project Link</p>
-            </div>
+        <div className="shadow-lg p-5 rounded-lg mt-7 text-white bg-[#112240] flex-auto">
+            <p className="text-[#58DFC3] text-base font-code">{props.kind}</p>
+            <h3 className="text-3xl text-[#CCD6F6] pb-4 pt-1">{props.name}</h3>
+            <p className="text-xl text-white pb-1">{props.desc}</p>
+            <ul className="list-disc pl-8 pb-4">
+                {props.stack.map(point => <li className="text-white text-lg">{point}</li>)}
+            </ul>
+            <p className="text-lg font-code text-[#58DFC3] ">{props.stack}</p>
+            <p>{props.link}</p>
         </div>
     )
 }

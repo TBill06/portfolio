@@ -1,10 +1,9 @@
 const About = () => {
     return(
-        <div className="flex justify-center flex-col items-start min-h-screen pt-2 max-w-5xl my-0 mx-auto">
-        <p>Hi! I'm</p>
-        <h1>Tushar</h1>
-        <p>About me</p>
-        </div>
+        <>
+        <h3 className="text-3xl text-[#CCD6F6] py-2">Experience - </h3>
+        <h4 className="text-white">Learning Design and Development Assistant</h4>
+        </>
     )
 }
 export default About
