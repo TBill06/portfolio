@@ -13,6 +13,7 @@ const App = () => {
         <section className='min-h-screen'>
           <h2 className="text-6xl py-2 text-[#58DFC3] font-medium md:text-6xl lg:text-9xl">Hello! - My name is</h2>
           <h2 className="text-6xl pt-2 pb-7 text-[#58DFC3] font-medium md:text-6xl lg:text-9xl">TUSHAR</h2>
+          <p className='text-white text-xl'>Thanks for visiting my portfolio. I'm a Computer Science and Business Student at Memorial University of Newfoundland in St. John's, Canada.</p>
           <About />
           <Projects />
           <Connect />
