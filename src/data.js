@@ -4,7 +4,7 @@ const projects_data = [
         name: 'MUN-Ask_Bot',
         description: "This is a bot trained on Memorial University's Calendar to answer all academic questions",
         stack: ['React ', 'Flask  ', 'Typescript ', 'OpenAI-API  ', 'Python '],
-        links: 'host'
+        links: 'https://www.google.com'
     },
     {
         kind: 'Featured Project',
