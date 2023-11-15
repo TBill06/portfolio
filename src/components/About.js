@@ -3,6 +3,20 @@ const About = () => {
         <div className="pb-6">
         <h3 className="text-4xl text-[#CCD6F6] py-2 md:text-4xl">Experience:</h3>
         <div className="p-5">
+        <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Front End Developer Intern</h4>
+        <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ Carnegie Learning - Zorbits Math</h4>
+        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside">
+            <li>Worked in a team developing issue/ticket management system for a machine learning lab detecting medical images.</li>
+            <li>Developing and maintaining CL dashboard, contributing to 10 projects focused on new features implementation
+                and internal testing tools. Also a lot of bug-fixing, code refactoring to ensure smooth re branding of the product.</li>
+            <li>Designed and implemented reusable Angular components, services, and modules, enhancing code scalability and
+                maintainability by 25% in key feature like student performance reports, teacher resources, district and school
+                profiles.</li>
+            <li>Implemented analytical strategies by leveraging Pendo, to track user interactions with features withing the product,
+                enabling a 40% improvement in product decision making with the help of quality user data.</li>
+        </ul>
+        </div>
+        <div className="p-5">
         <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Full Stack Developer</h4>
         <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ DIAG Lab - Memorial University</h4>
         <ul className="list-disc text-white text-xl px-6 pt-3 list-inside">
