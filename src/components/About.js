@@ -5,8 +5,7 @@ const About = () => {
         <div className="p-5">
         <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Front End Developer Intern</h4>
         <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ Carnegie Learning - Zorbits Math</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside">
-            <li>Worked in a team developing issue/ticket management system for a machine learning lab detecting medical images.</li>
+        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
             <li>Developing and maintaining CL dashboard, contributing to 10 projects focused on new features implementation
                 and internal testing tools. Also a lot of bug-fixing, code refactoring to ensure smooth re branding of the product.</li>
             <li>Designed and implemented reusable Angular components, services, and modules, enhancing code scalability and
@@ -19,14 +18,14 @@ const About = () => {
         <div className="p-5">
         <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Full Stack Developer</h4>
         <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ DIAG Lab - Memorial University</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside">
+        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
             <li>Worked in a team developing issue/ticket management system for a machine learning lab detecting medical images.</li>
         </ul>
         </div>
         <div className="p-5">
         <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Learning Design and Development Assistant</h4>
         <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ CITL - Memorial University</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside">
+        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
             <li>Developed web pages for nursing courses which were taught online at MUN Nursing school</li>
             <li>Wrote technical reports for support page release notes.</li>
             <li>Refactored course content to avoid copyright infringement and achieve web accessibility.</li>
