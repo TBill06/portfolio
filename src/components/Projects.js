@@ -6,7 +6,17 @@ const Projects = () => {
         <div className="pb-7">
         <h3 className="text-4xl text-[#CCD6F6] py-2">Here Are Some Things I've Built:</h3>
         <ul className="lg:flex flex-wrap gap-10">
-            {projects_data.map(project => <ProjectItem kind={project.kind} name={project.name} desc={project.description} stack={project.stack} points={project.points} link={project.links} />)}
+            {projects_data.map(project => 
+                <ProjectItem 
+                    kind={project.kind} 
+                    name={project.name} 
+                    desc={project.description} 
+                    stack={project.stack} 
+                    points={project.points} 
+                    link={project.links} 
+                    video={project.video}
+                />
+            )}
         </ul>
         </div>
     )
@@ -21,6 +31,17 @@ const ProjectItem = (props) => {
                 {props.points.map(point => <li className="text-white text-lg">{point}</li>)}
             </ul>
             <p className="text-lg font-code text-[#58DFC3] pb-3">{props.stack}</p>
+            {props.video && (
+                <div className="pb-3 flex justify-center align-middle">
+                <iframe
+                title={props.name}
+                src={props.video}
+                width="640" 
+                height="360"
+                allow="autoplay; encrypted-media"
+              ></iframe>
+                </div>
+            )}
             <a href={`${props.link}`} rel="noreferrer" target='_blank'  className="text-[#CCD6F6] text-2xl inline-block hover:text-[#58DFC3]"><FiGithub/></a>
         </div>
     )

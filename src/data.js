@@ -1,10 +1,19 @@
 const projects_data = [
     {
         kind: 'Featured Project',
+        name:'3D VR-Draw',
+        description:"This is a Unity app that runs on Meta Quest VR headsets. Users can move in a virtual 1:1 setup of the HCI lab at MUN and draw on the surfaces using simple hand gestures like pinch/point.",
+        points: ["Built a building-block system that facilitates data collection, testing, and experimentation, streamlining the process and reducing setup time by 80% for future research projects and papers."],
+        stack: ['Unity ', 'C# ', 'Meta SDK ', 'Git '],    
+        links: 'https://github.com/TBill06',
+        video: 'https://www.youtube.com/embed/go2tnyfUaeo'
+    },
+    {
+        kind: 'Featured Project',
         name: 'MUN-Ask_Bot',
         description: "This is a web app which answers all questions related to program and course information of Memorial University of Newfoundland.",
         points: ["It is trained on the university calender data and uses OpenAI's neural language model's embeddings endpoint and completions API like ChatGPT. ",
-        "The model is fine tuned to remember conversations it is making and chat accordingly like a human being, giving 85% accurate answers in 3 seconds.", "This model is in the beginning stage of development and the next phase is fine tuning to enhance accuracy and user rewards to reinforce how it learns to answer."],
+        "The model is fine tuned to remember conversations it is making and chat accordingly like a human being, giving 90% accurate answers under 3 seconds.", "What's Next: This model was done during the initial launch of ChatGPT, so the next phase would be to do better RAG using langChain and adding the whole updated information instead of the old way of semantic similarity. Also will give the model conversational memory to better assist the user."],
         stack: ['React ', 'Python ', 'Flask  ', 'Typescript ', 'OpenAI-API  ','py-Pandas ','py-BeautifulSoup ','Tailwind-CSS '],
         links: 'https://github.com/TBill06'
     },
