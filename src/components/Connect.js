@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiLinkedin, FiGithub, FiTwitter, FiMail } from 'react-icons/fi';
+import { FiLinkedin, FiGithub, FiTwitter } from 'react-icons/fi';
 
 const Connect = () => {
     const [hoveredIcon, setHoveredIcon] = useState(null);
@@ -23,12 +23,6 @@ const Connect = () => {
             url: 'https://twitter.com/Tushar_bill',
             label: 'Twitter: Follow my updates'
         },
-        {
-            id: 'email',
-            icon: <FiMail />,
-            url: 'mailto:bill.tushar21@gmail.com',
-            label: 'Email: Say hello directly'
-        }
     ];
 
     return(
@@ -39,8 +33,8 @@ const Connect = () => {
             </h3>
             
             <div className="cyber-card p-8 bg-[#0A1221] max-w-2xl mx-auto text-center">
-                <p className="text-xl text-white mb-8">
-                    I'm actively seeking <span className="text-[#58DFC3]">internship opportunities</span> for Summer 2023. 
+                <p className="text-xl text-white mb-8 mt-2">
+                    I'm actively seeking <span className="text-[#58DFC3]">for a full-time job.</span> 
                     Feel free to reach out if you'd like to discuss potential collaborations!
                 </p>
                 
@@ -78,7 +72,7 @@ const Connect = () => {
                     className="inline-block text-[#00F0FF] border border-[#00F0FF] px-8 py-3 
                                relative overflow-hidden group transition-all duration-300
                                hover:text-white hover:shadow-[0_0_15px_rgba(0,240,255,0.5)]" 
-                    href='mailto:bill.tushar21@gmail.com'
+                    href='mailto:tbillakanti@mun.ca'
                     target='_blank'
                     rel="noreferrer"
                 >

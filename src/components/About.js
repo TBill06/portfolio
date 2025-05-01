@@ -1,46 +1,63 @@
+import SkillsNetwork from './SkillsNetwork';
+
 const About = () => {
-    return(
-        <div className="pb-6">
-        <h3 className="text-4xl text-[#CCD6F6] py-2 md:text-4xl">Experience:</h3>
-        <div className="p-5">
-        <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Undergraduate Research Developer</h4>
-        <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ Memorial University - Human Computer Interaction Lab</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
-            <li>Coauthored a paper “Comparing Pinch and Point Poses for Stroke Drawing in Virtual Reality” with Dr. Jay Henderson.</li>
-            <li>Built and designed an Unity VR app with ECS architecture for a robust game-like experience to allow users drawing on multiple surfaces with various hand poses.</li>
-            <li>Implemented algorithms to optimize user experience like procedural mesh generations for 3D drawing, ray-casting, filters to reduce hand tracking jitters, data structures to collect points for analysis.</li>
-        </ul>
+    return (
+        <div className="pb-16">
+            <h3 className="text-4xl text-gradient font-bold py-2 mb-8">
+                <span>ABOUT ME</span>
+                <span className="ml-3 inline-block h-px w-20 bg-gradient-to-r from-[#00F0FF] to-[#FF00C8]"></span>
+            </h3>
+            
+            <div className="grid md:grid-cols-12 gap-8">
+                <div className="md:col-span-7 space-y-4">
+                    <p className="text-lg text-[#CCD6F6]">
+                        I'm a <span className="text-[#00F0FF]">Computer Science & Business</span> student at Memorial University, 
+                        passionate about building applications that solve real problems.
+                    </p>
+                    
+                    <p className="text-lg text-[#CCD6F6]">
+                        My journey in tech started with simple HTML websites and grew into a fascination with 
+                        <span className="text-[#FF00C8]"> full-stack development</span>, extended reality, and the 
+                        intersection of technology with everyday life.
+                    </p>
+                    
+                    <p className="text-lg text-[#CCD6F6]">
+                        Beyond coding, I'm deeply interested in product design, user experience, and creating 
+                        systems that feel intuitive yet powerful.
+                    </p>
+                    
+                    <div className="mt-6 cyber-card p-5 bg-[#0A1221]">
+                        <h4 className="text-xl text-[#58DFC3] mb-3">// CURRENT FOCUS</h4>
+                        <ul className="space-y-2">
+                            <li className="flex items-start">
+                                <span className="text-[#00F0FF] mr-2">▹</span>
+                                <span>Building immersive web experiences</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#00F0FF] mr-2">▹</span>
+                                <span>Expanding my knowledge in AR/VR development</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#00F0FF] mr-2">▹</span>
+                                <span>Contributing to open-source projects</span>
+                            </li>
+                            <li className="flex items-start">
+                                <span className="text-[#00F0FF] mr-2">▹</span>
+                                <span>Looking for development internships for 2023</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div className="md:col-span-5">
+                    <div className="cyber-card h-full flex flex-col justify-between p-5 bg-[#0A1221]">
+                        <h4 className="text-xl text-[#58DFC3] mb-3">// TECH STACK</h4>
+                        <SkillsNetwork />
+                    </div>
+                </div>
+            </div>
         </div>
-        <div className="p-5">
-        <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Front End Developer Intern</h4>
-        <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ Carnegie Learning - Zorbits Math</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
-            <li>Developing and maintaining CL dashboard, contributing to 10 projects focused on new features implementation
-                and internal testing tools. Also a lot of bug-fixing, code refactoring to ensure smooth re branding of the product.</li>
-            <li>Designed and implemented reusable Angular components, services, and modules, enhancing code scalability and
-                maintainability by 25% in key feature like student performance reports, teacher resources, district and school
-                profiles.</li>
-            <li>Implemented analytical strategies by leveraging Pendo, to track user interactions with features withing the product,
-                enabling a 40% improvement in product decision making with the help of quality user data.</li>
-        </ul>
-        </div>
-        <div className="p-5">
-        <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Full Stack Developer</h4>
-        <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ DIAG Lab - Memorial University</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
-            <li>Worked in a team developing issue/ticket management system for a machine learning lab detecting medical images.</li>
-        </ul>
-        </div>
-        <div className="p-5">
-        <h4 className="text-[#58DFC3] text-xl pb-1 md:text-2xl">Learning Design and Development Assistant</h4>
-        <h4 className="text-[#58DFC3] text-xl md:text-2xl">@ CITL - Memorial University</h4>
-        <ul className="list-disc text-white text-xl px-6 pt-3 list-inside space-y-3">
-            <li>Developed web pages for nursing courses which were taught online at MUN Nursing school</li>
-            <li>Wrote technical reports for support page release notes.</li>
-            <li>Refactored course content to avoid copyright infringement and achieve web accessibility.</li>
-        </ul>
-        </div>
-        </div>
-    )
-}
-export default About
+    );
+};
+
+export default About;

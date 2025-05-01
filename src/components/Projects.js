@@ -12,7 +12,7 @@ const Projects = () => {
                 <span className="ml-3 inline-block h-px w-20 bg-gradient-to-r from-[#00F0FF] to-[#FF00C8]"></span>
             </h3>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                 {projects_data.map((project, index) => (
                     <ProjectItem 
                         key={index}

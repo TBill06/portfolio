@@ -2,7 +2,7 @@ import TypewriterText from './TypeWriter';
 
 const TerminalHero = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center pt-20">
+    <div className="min-h-[70vh] flex flex-col justify-center pt-20">
       <div className="cyber-card p-5 md:p-8 mx-auto w-full max-w-3xl bg-[#0A1221] animated-fadeIn">
         <div className="flex items-center mb-4 border-b border-gray-700 pb-2">
           <div className="flex space-x-2">
@@ -34,7 +34,7 @@ const TerminalHero = () => {
           
           <div className="pl-4 text-white">
             <TypewriterText 
-              text="Full-stack Development | VR/AR | AI/ML | Software Engineering" 
+              text="Full-stack Development | AI/ML | VR/AR | Software Engineering" 
               delay={3000} 
               speed={20} 
             />
@@ -47,7 +47,7 @@ const TerminalHero = () => {
           
           <div className="pl-4 text-[#FF00C8]">
             <TypewriterText 
-              text="Building applications that integrate tech into our lives to make them better."
+              text="Building applications that integrate tech into our lives to make em better."
               delay={5500} 
               speed={25} 
             />

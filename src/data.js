@@ -1,6 +1,14 @@
 const projects_data = [
     {
         kind: 'Featured Project',
+        name: 'WebApp for LLM Study',
+        description: "Developed a full-stack web platform to study various form functions of user interactions with large language models (LLMs) and generative AI, focusing on user experience.",
+        points: ["Leveraged OpenAI’s API for text and image generation, AWS S3 and DynamoDB for real-time survey data collection.", "Provided a valuable survey application that streamlines the process for researchers to gather data for HCI studies on scale."],
+        stack: ['React', 'Typescript', 'AWS S3', 'AWS DynamoDB', 'OpenAI API', 'Express', 'Render', 'Vercel', 'Tailwind', 'Framer Motion'],
+        links: 'https://github.com/TBill06'
+    },
+    {
+        kind: 'Featured Project',
         name:'3D VR-Draw',
         description:"This is a Unity app that runs on Meta Quest VR headsets. Users can move in a virtual 1:1 setup of the HCI lab at MUN and draw on the surfaces using simple hand gestures like pinch/point.",
         points: ["Built a building-block system that facilitates data collection, testing, and experimentation, streamlining the process and reducing setup time by 80% for future research projects and papers."],

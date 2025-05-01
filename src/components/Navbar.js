@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return(
         <header className={`fixed w-full px-2 top-0 z-10 lg:px-5 transition-all duration-300 ${scrolled ? 'bg-[#050A13] bg-opacity-80 backdrop-blur-md' : 'bg-transparent'}`}>
-            <nav className="flex py-5 items-center justify-between max-w-7xl mx-auto">
+            <nav className="flex text-2xl py-5 items-center justify-between max-w-7xl mx-auto">
                 <h1 className="font-semibold text-white relative overflow-hidden group">
                     <span className="inline-block">
                         <span className="relative z-10">TUSHAR</span>
